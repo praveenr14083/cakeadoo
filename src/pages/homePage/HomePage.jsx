@@ -1,7 +1,11 @@
+import { Navbar } from "../../layouts/Navbar/Navbar";
+import { HeroSection } from "./section/HeroSection";
+
 export default function HomePage() {
   return (
-    <div>
-      <h1 className="text-pink-500">Homepage</h1>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
   );
 }
