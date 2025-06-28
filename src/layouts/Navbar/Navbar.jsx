@@ -9,8 +9,8 @@ export function Navbar() {
 
   return (
     // Navbar - Main Section
-    <nav className="sticky top-0">
-      <div className="px-4 sm:px-6 lg:px-8 2xl:px-24 py-4 flex items-center justify-between">
+    <nav className="sticky top-0 bg-white z-25">
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4 flex items-center justify-between">
         {/* Wrap Logo */}
         <div className="flex items-center gap-2">
           <Cake className="text-primary size-8" />
