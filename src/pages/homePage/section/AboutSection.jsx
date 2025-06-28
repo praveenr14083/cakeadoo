@@ -16,16 +16,17 @@ export function AboutSection() {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col justify-center gap-6">
-            <h1 className="text-center md:text-start text-4xl md:text-6xl font-bold leading-tight">
-              <span
-                style={{ fontFamily: "Great Vibes" }}
-                className="text-primary block text-5xl md:text-7xl"
-              >
-                Where Every Slice
-              </span>
-              <span className="block text-black">Tells a Story</span>
+          <div className="flex flex-col justify-center gap-4">
+            <h1
+              className="text-primary text-3xl md:text-5xl text-center md:text-start font-bold"
+              style={{ fontFamily: "Great Vibes" }}
+            >
+              About Us
             </h1>
+
+            <h2 className="text-2xl md:text-6xl text-center md:text-start font-bold">
+              Where Every Slice Tells a Story
+            </h2>
 
             <p className="text-gray-500 text-center md:text-start">
               Born from a kitchen filled with joy and flour-dusted memories,
