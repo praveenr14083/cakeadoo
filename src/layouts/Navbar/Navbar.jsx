@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Cake, ShoppingCart, X } from "lucide-react";
+import { Cake, ShoppingCart, X, ChevronDown, ChevronUp } from "lucide-react";
 import { RiMenu3Line } from "react-icons/ri";
 import { MobileMenu } from "./components/MobileMenu";
 import { NAV_ITEMS } from "../../utils/constants";
@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     // Navbar - Main Section
-    <nav className="sticky top-0 bg-white z-25">
+    <nav className="sticky top-0 z-25 bg-white">
       <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4 flex items-center justify-between">
         {/* Wrap Logo */}
         <div className="flex items-center gap-2">
@@ -19,10 +19,36 @@ export function Navbar() {
 
         {/* Wrap Nav Items */}
         <div className="hidden md:flex md:gap-8 md:items-center">
-          <ul className="flex gap-6">
+          <ul className="flex gap-10">
             {NAV_ITEMS.map((item) => (
-              <li key={item.id} className="font-semibold hover:text-primary">
-                <a href={item.href}>{item.name}</a>
+              <li key={item.id} className="relative group">
+                <a
+                  href={item.href}
+                  className="font-semibold hover:text-primary flex items-center gap-1"
+                >
+                  {item.name}
+                  {item.dropDown && Array.isArray(item.dropDown) && (
+                    <>
+                      <ChevronDown className="size-4 group-hover:hidden" />
+                      <ChevronUp className="size-4 hidden group-hover:block" />
+                    </>
+                  )}
+                </a>
+
+                {item.dropDown && Array.isArray(item.dropDown) && (
+                  <div className="absolute -right-25 pt-8 ">
+                    <ul className="w-52 p-2 flex-col gap-1 rounded-xl bg-white shadow-xl z-50 hidden group-hover:flex">
+                      {item.dropDown.map((subItem) => (
+                        <li
+                          key={subItem.id}
+                          className="p-2 hover:bg-primary/20 hover:text-primary/90 rounded border-b-primary"
+                        >
+                          <a href={`#${subItem.id}`}>{subItem.name}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </li>
             ))}
           </ul>
