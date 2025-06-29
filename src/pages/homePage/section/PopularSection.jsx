@@ -23,9 +23,9 @@ const popularProducts = [
     star: 5,
   },
   {
-    title: "Red Velvet",
-    imageSrc: "/assets/images/popular/red-velvet-cake.png",
-    imageAlt: "Red Velvet Cake",
+    title: "Rasmalai",
+    imageSrc: "/assets/images/popular/rasamalai-cake.webp",
+    imageAlt: "Rasmalai Cake",
     price: 800,
     star: 5,
   },
