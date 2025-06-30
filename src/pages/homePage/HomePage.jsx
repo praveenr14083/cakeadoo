@@ -1,3 +1,4 @@
+import Footer from "../../layouts/Footer/Footer";
 import { Navbar } from "../../layouts/Navbar/Navbar";
 import { AboutSection } from "./section/AboutSection";
 import { CustomerReviewSection } from "./section/CustomerReviewSection";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <PopularSection />
       <CustomerReviewSection />
       <OurOrderOptions />
+      <Footer />
     </>
   );
 }
