@@ -6,8 +6,10 @@ import { RandomDots } from "../components/RandomDots";
 
 export function HeroSection() {
   return (
-    <section className="relative">
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4">
+    // Main Section - Hero Section
+    <section id="hero-section" className="relative">
+      {/* Container Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
           {/* Content */}
           <div className="flex flex-col justify-center gap-4 order-2 md:order-1">

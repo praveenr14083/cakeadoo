@@ -33,8 +33,10 @@ const popularProducts = [
 
 export function PopularSection() {
   return (
-    <section>
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4">
+    // Main Section - Popular Section
+    <section id="popular-section">
+      {/* Container Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="flex flex-col gap-10">
           {/* Heading */}
           <div>

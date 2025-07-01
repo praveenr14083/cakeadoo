@@ -3,8 +3,10 @@ import "@fontsource/great-vibes";
 
 export function AboutSection() {
   return (
+    // Main Section - About Us
     <section id="about-us">
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4 flex items-center justify-between">
+      {/* Conatain Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Image */}
           <div className="flex justify-center">

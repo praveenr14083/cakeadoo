@@ -90,9 +90,10 @@ const PIECE_CAKES = [
 
 export function PieceCakeSection() {
   return (
-    // Main Section
-    <section>
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4">
+    // Main Section - Piece Cake Section
+    <section id="piece-cake-section">
+      {/* Container Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="space-y-10">
           {/* Heading */}
           <div className="space-y-2">

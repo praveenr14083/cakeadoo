@@ -28,9 +28,10 @@ const ORDER_OPTIONS = [
 
 export default function OurOrderOptionsSection() {
   return (
-    //Main - Our Order Options Section
-    <section>
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-4">
+    // Main Section - Our Order Options Section
+    <section id="order-options-section">
+      {/* Container Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:bg-primary/20 rounded-2xl p-6 gap-6">
           {/* Wrap Image and Content */}
           {ORDER_OPTIONS.map((option) => (

@@ -7,8 +7,10 @@ import { MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-400">
-      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-10">
+    // Main Section - Footer
+    <footer id="footer" className="bg-black text-gray-400">
+      {/* Container Section */}
+      <div className="px-4 sm:px-8 lg:px-12 2xl:px-24 py-6 md:py-8 lg:py-10">
         <div className="space-y-8">
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
             {/* Section 1 */}
