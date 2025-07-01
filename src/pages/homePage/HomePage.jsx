@@ -4,6 +4,7 @@ import { AboutSection } from "./section/AboutSection";
 import { CustomerReviewSection } from "./section/CustomerReviewSection";
 import { HeroSection } from "./section/HeroSection";
 import OurOrderOptions from "./section/OurOrderOptionsSection";
+import { PieceCakeSection } from "./section/PieceCakeSection";
 import { PopularSection } from "./section/PopularSection";
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <PopularSection />
+      <PieceCakeSection />
       <CustomerReviewSection />
       <OurOrderOptions />
       <Footer />
