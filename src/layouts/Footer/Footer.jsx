@@ -5,7 +5,7 @@ import { QUICK_LINKS_DATA } from "./data/footerData";
 import { POLICIES_DATA } from "./data/footerData";
 import { MapPin, Phone } from "lucide-react";
 
-export default function Footer() {
+export function Footer() {
   return (
     // Main Section - Footer
     <footer id="footer" className="bg-black text-gray-400">

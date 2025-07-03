@@ -1,4 +1,4 @@
-import Footer from "../../layouts/Footer/Footer";
+import { Footer } from "../../layouts/Footer/Footer";
 import { Navbar } from "../../layouts/Navbar/Navbar";
 import { AboutSection } from "./section/AboutSection";
 import { CustomerReviewSection } from "./section/CustomerReviewSection";
@@ -11,7 +11,7 @@ import { PopularSection } from "./section/PopularSection";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <AboutSection />
       <PopularSection />
@@ -19,7 +19,7 @@ export default function HomePage() {
       <PieceCakeSection />
       <CustomerReviewSection />
       <OurOrderOptions />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
