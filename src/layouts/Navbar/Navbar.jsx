@@ -3,10 +3,11 @@ import { Cake, ShoppingCart, X, ChevronDown, ChevronUp } from "lucide-react";
 import { RiMenu3Line } from "react-icons/ri";
 import { MobileMenu } from "./components/MobileMenu";
 import { NAV_ITEMS } from "../../utils/constants";
+import { useNavigate, Link } from "react-router";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     // Main Section - Navbar
     <nav id="navbar" className="sticky top-0 z-25 bg-white">
@@ -24,8 +25,8 @@ export function Navbar() {
             <ul className="flex gap-10">
               {NAV_ITEMS.map((item) => (
                 <li key={item.id} className="relative group">
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="font-semibold hover:text-primary flex items-center gap-1"
                   >
                     {item.name}
@@ -35,7 +36,7 @@ export function Navbar() {
                         <ChevronUp className="size-4 hidden group-hover:block" />
                       </>
                     )}
-                  </a>
+                  </Link>
 
                   {item.dropDown && Array.isArray(item.dropDown) && (
                     <div className="absolute -right-25 pt-8 ">
@@ -64,7 +65,10 @@ export function Navbar() {
                 Contact Us
               </a>
 
-              <button className="rounded p-2 bg-primary hover:bg-primary/90 ">
+              <button
+                onClick={() => navigate("/cart")}
+                className="rounded p-2 bg-primary hover:bg-primary/90 "
+              >
                 <ShoppingCart className="text-white" />
               </button>
             </div>
@@ -72,7 +76,10 @@ export function Navbar() {
 
           {/* Mobile Menu Icon */}
           <div className="md:hidden flex gap-5 items-center">
-            <button className="block md:hidden hover:text-primary">
+            <button
+              onClick={() => navigate("/cart")}
+              className="block md:hidden hover:text-primary"
+            >
               <ShoppingCart />
             </button>
             <button
